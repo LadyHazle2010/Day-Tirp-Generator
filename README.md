@@ -1,1 +1,2 @@
-# Day-Tirp-Generator
+# Day-Tirp-Generator 
+Fun in the sun
