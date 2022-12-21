@@ -34,16 +34,3 @@ elif destination_list is True:
    input()
    # destination = False
    print(destination_list)
-
-# list_name = ['javaScript', 'Python', 'Java', 'Django', 'React']
-# element_at_second_index = list_name[1]
-# print(element_at_second_index)
-
-# def problem3(string):
-#     for char in string:
-#         print(char)
-
-# def destination_choice = input("Where would you like to go?")
-# print(destination_choice)
-
-# destination_choice()
