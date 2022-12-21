@@ -4,7 +4,7 @@
 # entertainment = ("jazz concert", "opera", "bar hop", "scubba diving")
 
 def random(string):
-        for char in destination_list:
+        for rand_element_at_index in destination_list:
            rand_element_at_index = destination_list[0]
 print('Where would you like to go?')
 
@@ -13,7 +13,7 @@ rand_element_at_index = destination_list[1]
 rand_element_at_index = destination_list[2]
 rand_element_at_index = destination_list[3]
 rand_element_at_index = destination_list[0]
-print(rand_element_at_index)
+print()
 
 if destination_list is True:
    input()
