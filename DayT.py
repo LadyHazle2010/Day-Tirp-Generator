@@ -1,52 +1,35 @@
-def display_welcome():
-   msg = 'Please choose your trip options!'
-   print(msg)
+# def display_welcome():
+#    msg = 'Please choose your trip options!'
+#    print(msg)
 
-print('Please choose your trip options!')
+# print('Please choose your trip options!')
 
-print('Where would you like to go?') 
+# print('Where would you like to go?') 
 
-list_option = ()
-
-destination = ("India", "Columbia", "Peru", "Africa")
-restaurants = ("olive garden", "gestopo's", "little india", "wakanda forever")
-transportation = ("airplane", "ship", "train", "tour bus")
-entertainment = ("jazz concert", "opera", "bar hop", "scubba diving")
-
+# list_option = ()
 import random
 
-def generate_random_element():
-   return random.randint()
+
+def generate_trip():
+   destinations = ["India", "Columbia", "Peru", "Africa"]
+   restaurants = ["olive garden", "gestopo's", "little india", "wakanda forever"]
+   transportations = ["airplane", "ship", "train", "tour bus"]
+   entertainments = ["jazz concert", "opera", "bar hop", "scubba diving"]
+
+   destination = random.choice(destinations)
+   restaurant = random.choice(restaurants)
+   transportation = random.choice(transportations)
+   entertainment = random.choice(entertainments)
+
+   trip =[destination, restaurant, transportation, entertainment]
+   return trip
 
 
-for rand_element_at_index in generate_random_element():
-           rand_element_at_index(0,1,2,3) 
-           random.randint()
-print('Where would you like to go?')
 
-list_option =['India', 'Columbia', 'Peru', 'Africa']
-rand_element_at_index = list_option[1]
-rand_element_at_index = list_option[2]
-rand_element_at_index = list_option[3]
-rand_element_at_index = list_option[0]
-print(list_option)
 
-while list_option is True:
-   input()
-   destination = False
-   print()
 
-if list_option is True:
-   input()
-   destination = False
-   print(list_option)
 
-elif list_option is True:
-   input()
-   # destination = False
-   print(list_option)
+trip = generate_trip()
 
-elif list_option is True:
-   input()
-   # destination = False
-   print(list_option)
+for selection in trip:
+   print(selection)
