@@ -12,33 +12,36 @@ def generate_trip():
    transportation = random.choice(transportations)
    entertainment = random.choice(entertainments)
 
-   trip = [destination, restaurant, transportation, entertainment]
-   return trip
+   random_selections = [destination, restaurant, transportation, entertainment]
+   return random_selections
 
 trip = generate_trip()
 
 
-def confirm_trip():
+# def confirm_trip():
+
    
-   if confirm_trip == True:
-      print('Trip approved!')
-   else:
-      confirm_trip == False
-      print(trip)
-
-
+   
+   
+def print_trip(trip):
+   for selection in trip:
+      print(selection)
+   
      
+print_trip(trip) 
+
+print('Does the trip suffice?')
+user = input()
+print(user)
 
 
-for selection in trip:
-   print(selection)
 
 
-def gernerate_message():
-   msg = f'Great choice!', 'Please comfirm.'
-   user_input_result = ('yes or no')
-   if user_input_result == True:
-      print('yes')
-   else:
-      user_input_result == False
-      print('No')
+# def gernerate_message():
+#    msg = f'Great choice!', 'Please comfirm.'
+#    user_input_result = ('yes or no')
+#    if user_input_result == True:
+#       print('yes')
+#    else:
+#       user_input_result == False
+#       print('No')
