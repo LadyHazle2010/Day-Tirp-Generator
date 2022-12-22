@@ -1,12 +1,3 @@
-# def display_welcome():
-#    msg = 'Please choose your trip options!'
-#    print(msg)
-
-# print('Please choose your trip options!')
-
-# print('Where would you like to go?') 
-
-# list_option = ()
 import random
 
 
@@ -24,12 +15,28 @@ def generate_trip():
    trip =[destination, restaurant, transportation, entertainment]
    return trip
 
-
-
-
-
-
 trip = generate_trip()
 
-for selection in trip:
-   print(selection)
+  
+def  confirm_trip():
+     
+
+
+  
+
+      
+               for selection in trip:
+                  print(selection)
+
+
+            
+
+# def run():
+#    confirm_trip(list)
+#    list('generate_trip')
+
+
+#    run()
+
+
+
