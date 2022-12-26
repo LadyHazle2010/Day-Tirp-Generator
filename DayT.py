@@ -18,30 +18,19 @@ def generate_trip():
 trip = generate_trip()
 
 
-# def confirm_trip():
+def confirm_trip():
+
+
+
+#  print('Does the trip suffice?')
+# user = input()
+# print(user)
 
    
    
-   
-def print_trip(trip):
-   for selection in trip:
-      print(selection)
-   
-     
-print_trip(trip) 
-
-print('Does the trip suffice?')
-user = input()
-print(user)
-
-
-
-
-# def gernerate_message():
-#    msg = f'Great choice!', 'Please comfirm.'
-#    user_input_result = ('yes or no')
-#    if user_input_result == True:
-#       print('yes')
-#    else:
-#       user_input_result == False
-#       print('No')
+# def print_trip(trip):
+#       for selection in trip:
+#          print(selection)
+      
+      
+#       print_trip(trip)
