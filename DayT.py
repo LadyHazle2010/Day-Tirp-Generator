@@ -15,31 +15,28 @@ def generate_trip():
    random_selections = [destination, restaurant, transportation, entertainment]
    return random_selections
 
-trip = generate_trip()
 
 
 def confirm_complete_trip():
+   response = ''
+   while response != 'yes':
 
-   print('Does the trip suffice?')
-user = input()
-print(user)
-
-user = 'Does the trip suffice?'
-if user == input():
-   print('Great!')
-else:
-   print(generate_trip)
-
- 
+      trip = generate_trip()
+      print_trip(trip)
+      response = input('Does trip suffice?')
 
 
-   
 
-   
-   
-def print_trip(trip):
-      for selection in trip:
+def trip_acceptable():
+   user = input('Congradulations! Enjoy your trip and Thank You for choosing African Giant Enterprises. ')
+   print(user)
+
+
+
+def print_trip(selections_list):
+      for selection in selections_list:
          print(selection)
       
-      
-      print_trip(trip)
+
+confirm_complete_trip()
+trip_acceptable()
