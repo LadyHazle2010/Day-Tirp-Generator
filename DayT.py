@@ -18,19 +18,28 @@ def generate_trip():
 trip = generate_trip()
 
 
-def confirm_trip():
+def confirm_complete_trip():
+
+   print('Does the trip suffice?')
+user = input()
+print(user)
+
+user = 'Does the trip suffice?'
+if user == input():
+   print('Great!')
+else:
+   print(generate_trip)
+
+ 
 
 
-
-#  print('Does the trip suffice?')
-# user = input()
-# print(user)
+   
 
    
    
-# def print_trip(trip):
-#       for selection in trip:
-#          print(selection)
+def print_trip(trip):
+      for selection in trip:
+         print(selection)
       
       
-#       print_trip(trip)
+      print_trip(trip)
