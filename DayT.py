@@ -16,7 +16,6 @@ def generate_trip():
    return random_selections
 
 
-
 def confirm_complete_trip():
    response = ''
    while response != 'yes':
@@ -24,13 +23,27 @@ def confirm_complete_trip():
       trip = generate_trip()
       print_trip(trip)
       response = input('Does trip suffice?')
-
-
+      
+   
+  
+confirm_complete_trip 
 
 def trip_acceptable():
-   user = input('Congradulations! Enjoy your trip and Thank You for choosing African Giant Enterprises. ')
-   print(user)
+   print('Congradulations! Enjoy your trip and Thank You for choosing African Giant Enterprises. ')
+   
+   trip_acceptable = 'yes'
+     
+      
+for display_info in confirm_complete_trip():
+      print(trip_acceptable + display_info)
+      
 
+
+  
+
+ 
+   
+   
 
 
 def print_trip(selections_list):
@@ -40,3 +53,9 @@ def print_trip(selections_list):
 
 confirm_complete_trip()
 trip_acceptable()
+
+
+
+#Print the string and then print the completed trip within that same function. Hint: to do so, you'll
+#need to return the confirmed trip from the confirm_complete_trip function into a variable, which will 
+#be passed in to a parameter of the trip_acceptable() function (you will need to define that parameter)
